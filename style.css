@@ -168,8 +168,42 @@ body {
 }
 
 .about_us, .gallery {
-  height: 100vh;
-  padding: 20px;
+  min-height: 100vh;
+}
+
+.about_us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about_us__title {
+  width: 100%;
+}
+
+.about_us__header {
+  font-size: 3em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.about_us__information {
+  width: calc(50% + 20px);
+  position: relative;
+  left: 0;
+  border-right: 5px dotted black;
+}
+
+.about_us__information:nth-of-type(2n) {
+  left: calc(50% - 20px);
+  border-right: none;
+  border-left: 5px dotted black;
 }
 
 @media screen and (min-width: 1000px) {
