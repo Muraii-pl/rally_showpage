@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto Mono',monospace;
   font-size: 16px;
   background-color: #d7e0e9;
+  overflow-x: hidden;
 }
 
 .top {
@@ -167,6 +168,7 @@ body {
   text-decoration: none;
 }
 
+About US
 .about_us, .gallery {
   min-height: 100vh;
 }
@@ -183,10 +185,6 @@ body {
           flex-direction: column;
 }
 
-.about_us__title {
-  width: 100%;
-}
-
 .about_us__header {
   font-size: 3em;
   -ms-flex-item-align: start;
@@ -194,14 +192,15 @@ body {
 }
 
 .about_us__information {
-  width: calc(50% + 20px);
+  width: calc(50%);
   position: relative;
   left: 0;
+  padding: 20px;
   border-right: 5px dotted black;
 }
 
 .about_us__information:nth-of-type(2n) {
-  left: calc(50% - 20px);
+  left: calc(50% - 5px);
   border-right: none;
   border-left: 5px dotted black;
 }
