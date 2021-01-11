@@ -149,6 +149,7 @@ body{
         justify-content: center;
         width: 100%;
         padding: 10px;
+        transition: .3s .2s ease-in-out;
         &:hover{
            box-shadow:2px 2px 10px 2px black;
         }
@@ -194,23 +195,126 @@ About US
             border-left: 5px dotted black;
         }
     }
+    &__img{
+        width: 100px;
+        margin-right: 20px;
+        float: left;
+    }
 
+}
+
+.gallery{
+    display: flex;
+    flex-flow: wrap row;
+    padding: 20px;
+    justify-content: space-around;
+    align-content: space-around;
+
+    &__box{
+        min-width: 30%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img{
+        height: 150px;
+        width: 150px;
+        cursor: pointer;
+        transition: .5s .1s ease-in-out;
+
+    }
+
+    &__figcaption{
+        text-align: center;
+    }
+}
+.fab{
+    color: #097aecee;
+}
+
+.contact{
+    padding: 20px;
+    display: flex;
+    flex-flow: wrap column;
+    &__title{
+        width: 100%;
+        font-size: 2em;
+    }
+    &__details{
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__person{
+        min-width: 50%;
+        padding: 10px;
+        &:nth-child(2){
+           text-align: right;
+        }
+    }
+
+    &__form{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    &__text{
+        font-size: 1.25em;
+        text-decoration: none;
+        & a{
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    &__input{
+        min-width: 100%;
+        padding: 5px;
+        background:none;
+        border: none;
+        border-bottom: 1px black solid;
+        outline: none;
+        &:focus{
+            box-shadow: 0 5px 5px 1px #097aec38;
+        }
+        
+    }
+
+    &__button{
+        margin-top: 10px;
+        width: 30%;
+        background-color: rgba(255, 255, 255, 0.438);
+        border: 2px #097aec7e solid;
+        padding: 5px;
+        border-radius: 10px;
+        transition: .5s 0.2s ease-in-out;
+
+        &:hover
+        {
+            background-color: #097aec7e;
+            width: 33%;
+
+        }
+    }
+}
+
+
+.footer{
+    text-align: center;
+    padding: 5px;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
 // media queries
-@media screen and (min-width:1000px)
+@media screen and (min-width:768px)
 {   
 
     
@@ -244,6 +348,21 @@ About US
             height: 100%;
         }
     }
+
+    .gallery{
+        &__box{
+            height: 400px;
+        }
+        &__img{
+            width: 350px;
+            height: 350px;
+            &:hover{
+                height: 370px;
+                width: 370px;
+                opacity: .6;
+            }
+        }
+    }
 }
 
 @media screen and (min-width:1244px)
@@ -255,4 +374,30 @@ About US
     .top__second_header{
         font-size: 2em;
     }
+
+    .gallery{
+        &__box{
+            height: 550px;
+        }
+        &__img{        
+            width: 400px;
+            height: 400px;
+            &:hover{
+                width: 420px;
+                height: 420px;
+            }
+        }}
+
+        .contact{
+            flex-flow: wrap row;
+            &__details{
+                width: 49%;
+            }
+            &__form{
+                width: 49%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
 }

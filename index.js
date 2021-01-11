@@ -5,3 +5,16 @@ const handleClick = () =>{
     nav.classList.toggle('nav--active')
 };
 hamburger.addEventListener('click',handleClick);
+
+
+const img = document.querySelectorAll(".gallery__img");
+const modalView = () =>{
+    
+};
+
+img.forEach((ele) => {
+    ele.addEventListener('click',() => {
+        console.log(ele)
+        ele.classList.toggle('image__click')
+    })
+});

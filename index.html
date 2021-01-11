@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     
 </head>
 <body>
@@ -24,8 +24,8 @@
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__items"><a href="#about_us" class="nav__links">O nas</a></li>
-            <li class="nav__items"><a href="" class="nav__links">Galeria</a></li>
-            <li class="nav__items"><a href="" class="nav__links">Kontakt</a></li>
+            <li class="nav__items"><a href="#gallery" class="nav__links">Galeria</a></li>
+            <li class="nav__items"><a href="#contact" class="nav__links">Kontakt</a></li>
         </ul>
     </nav>
     <div class="top__title">
@@ -43,31 +43,92 @@
     </h1>
 </header>
 <article class="about_us__information">
+    <img src="./img/person.jpeg" alt="person" class="about_us__img">
+    <h3 class="about_us__name">Person 1</h3>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa sed necessitatibus eos neque deleniti amet voluptates, rerum dolorem, quas illum corrupti in, accusantium exercitationem voluptatibus nisi dolorum maxime rem.
 </article>
 <article class="about_us__information">
+    <img src="./img/person.jpeg" alt="person" class="about_us__img">
+    <h3 class="about_us__name">Person 1</h3>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa sed necessitatibus eos neque deleniti amet voluptates, rerum dolorem, quas illum corrupti in, accusantium exercitationem voluptatibus nisi dolorum maxime rem.
 </article>
 <article class="about_us__information">
+    <img src="./img/person.jpeg" alt="person" class="about_us__img">
+    <h3 class="about_us__name">Person 1</h3>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa sed necessitatibus eos neque deleniti amet voluptates, rerum dolorem, quas illum corrupti in, accusantium exercitationem voluptatibus nisi dolorum maxime rem.
 </article>
 <article class="about_us__information">
+    <img src="./img/person.jpeg" alt="person" class="about_us__img">
+    <h3 class="about_us__name">Person 1</h3>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa sed necessitatibus eos neque deleniti amet voluptates, rerum dolorem, quas illum corrupti in, accusantium exercitationem voluptatibus nisi dolorum maxime rem.
 </article>
 <article class="about_us__information">
+    <img src="./img/person.jpeg" alt="person" class="about_us__img">
+    <h3 class="about_us__name">Person 1</h3>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa sed necessitatibus eos neque deleniti amet voluptates, rerum dolorem, quas illum corrupti in, accusantium exercitationem voluptatibus nisi dolorum maxime rem.
 </article>
 <article class="about_us__information">
+    <img src="./img/person.jpeg" alt="person" class="about_us__img">
+    <h3 class="about_us__name">Person 1</h3>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laboriosam reprehenderit eveniet culpa aspernatur quis sapiente nobis ducimus ipsum dicta nisi vitae officia deleniti, explicabo quia aliquid doloribus. Provident, accusamus.
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa sed necessitatibus eos neque deleniti amet voluptates, rerum dolorem, quas illum corrupti in, accusantium exercitationem voluptatibus nisi dolorum maxime rem.
 </article>
 </section>
 <section class="gallery" id="gallery">
-
-    Galeria
+    <figure class="gallery__box">
+        <img src="./img/1.jpeg" alt="" class="gallery__img">
+        <figcaption class="gallery__figcaption">Rally 1</figcaption>
+    </figure>
+    <figure class="gallery__box">
+        <img src="./img/2.jpeg" alt="" class="gallery__img">
+        <figcaption class="gallery__figcaption">Rally 2</figcaption>
+    </figure>
+    <figure class="gallery__box">
+        <img src="./img/3.jpeg" alt="" class="gallery__img">
+        <figcaption class="gallery__figcaption">Rally 3</figcaption>
+    </figure>
+    <figure class="gallery__box">
+        <img src="./img/4.jpeg" alt="" class="gallery__img">
+        <figcaption class="gallery__figcaption">Rally 4</figcaption>
+    </figure>
+    <figure class="gallery__box">
+        <img src="./img/5.jpeg" alt="" class="gallery__img">
+        <figcaption class="gallery__figcaption">Rally 5</figcaption>
+    </figure>
+    <figure class="gallery__box">
+        <img src="./img/6.jpeg" alt="" class="gallery__img">
+        <figcaption class="gallery__figcaption">Rally 6</figcaption>
+    </figure>
 </section>
+<section class="contact" id="contact">
+    <h2 class="contact__title">Kontakt</h2>
+    <div class="contact__details">
+        <div class="contact__person">
+            <p class="contact__text">Jan Kowalski</p>
+            <p class="contact__text">Nr Telefonu: 123-456-789</p>
+            <p class="contact__text"><i class="fab fa-facebook-f"></i><a href=""> Jan Kowalski</a></p>
+        </div>
+        <div class="contact__person">
+            <p class="contact__text">Jan Kowalski</p>
+            <p class="contact__text">Nr Telefonu: 123-456-789</p>
+            <p class="contact__text"><i class="fab fa-facebook-f"></i><a href=""> Jan Kowalski</a></p>
+        </div>
+    </div>
+    <div class="contact__form">
+        <form action=mailto:someone@example.com" method="post">
+            <p class="contact__text">Name:</p>
+            <input type="text" class="contact__input">
+            <p class="contact__text">E-mail:</p>
+            <input type="text" class="contact__input">
+            <p class="contact__text">Wiadomość:</p>
+            <input type="text" class="contact__input">
+            <input type="submit" value="Send" class="contact__button">
+            <input type="reset" value="Reset" class="contact__button">
 
-
-
+        </form>
+    </div>
+</section>
+<footer class="footer">Mateusz Głowania &copy 2021</footer>
 
 <script src="index.js"></script>
 </body>
