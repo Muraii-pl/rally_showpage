@@ -251,7 +251,6 @@ About US
 }
 
 .gallery__img {
-  height: 150px;
   width: 150px;
   -webkit-transition: .5s .1s ease-in-out;
   transition: .5s .1s ease-in-out;
@@ -398,11 +397,9 @@ About US
   }
   .gallery__img {
     width: 350px;
-    height: 350px;
   }
   .gallery__img:hover {
-    height: 370px;
-    width: 370px;
+    width: 400px;
     opacity: .6;
   }
 }
@@ -418,12 +415,10 @@ About US
     height: 550px;
   }
   .gallery__img {
-    width: 400px;
-    height: 400px;
+    width: 500px;
   }
   .gallery__img:hover {
-    width: 420px;
-    height: 420px;
+    width: 520px;
   }
   .contact {
     -webkit-box-orient: horizontal;
