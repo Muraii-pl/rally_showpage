@@ -7,8 +7,3 @@ const handleClick = () =>{
 hamburger.addEventListener('click',handleClick);
 
 
-const img = document.querySelectorAll(".gallery__img");
-const modalView = () =>{
-    
-};
-
