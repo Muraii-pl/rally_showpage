@@ -93,6 +93,10 @@ body {
   transition: transform .2s .2s ease-in-out, -webkit-transform .2s .2s ease-in-out;
 }
 
+.hamburger--active {
+  position: fixed;
+}
+
 .hamburger--active .hamburger__inner {
   background-color: transparent;
 }

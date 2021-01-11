@@ -104,7 +104,9 @@ body{
             transition: transform .2s .2s ease-in-out;
         }
     }
-
+    &--active{
+        position: fixed;
+    }
     &--active &__inner{
        background-color: transparent;
     }
