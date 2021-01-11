@@ -12,9 +12,3 @@ const modalView = () =>{
     
 };
 
-img.forEach((ele) => {
-    ele.addEventListener('click',() => {
-        console.log(ele)
-        ele.classList.toggle('image__click')
-    })
-});

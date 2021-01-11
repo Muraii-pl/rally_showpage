@@ -176,7 +176,7 @@ About US
     flex-direction: column;
 
     &__title{
-       
+       padding: 20px;
     }
     &__header{
         font-size: 3em;
@@ -222,7 +222,6 @@ About US
     &__img{
         height: 150px;
         width: 150px;
-        cursor: pointer;
         transition: .5s .1s ease-in-out;
 
     }

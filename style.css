@@ -187,6 +187,10 @@ About US
           flex-direction: column;
 }
 
+.about_us__title {
+  padding: 20px;
+}
+
 .about_us__header {
   font-size: 3em;
   -ms-flex-item-align: start;
@@ -249,7 +253,6 @@ About US
 .gallery__img {
   height: 150px;
   width: 150px;
-  cursor: pointer;
   -webkit-transition: .5s .1s ease-in-out;
   transition: .5s .1s ease-in-out;
 }
