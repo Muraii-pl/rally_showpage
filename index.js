@@ -11,6 +11,6 @@ navLinks.forEach((element)=>{
     addEventListener('click',()=>{
     nav.classList.remove('nav--active');
     hamburger.classList.remove('hamburger--active')
-}
-})
+});
+});
 
