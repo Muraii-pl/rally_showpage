@@ -9,7 +9,6 @@ body {
   font-family: 'Roboto Mono',monospace;
   font-size: 16px;
   background-color: #d7e0e9;
-  overflow-x: hidden;
 }
 
 .top {
@@ -127,6 +126,7 @@ body {
 .nav--active {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
+  position: fixed;
 }
 
 .nav__list {
@@ -380,6 +380,9 @@ About US
     height: auto;
     -webkit-transform: translateX(60vw);
             transform: translateX(60vw);
+  }
+  .nav--active {
+    position: absolute;
   }
   .nav__list {
     margin-top: 0;
